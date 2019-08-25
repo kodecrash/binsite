@@ -1,0 +1,60 @@
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+
+@include mobile {
+    :host {
+        .nav-logo {
+            margin: 15px auto;
+            .nav-logo-subhead {
+                text-transform: uppercase;
+                color: $medium-black;
+                font-size: 14px;
+                letter-spacing: 4px;
+                margin: 5px 0;
+                font-weight: bold;
+            }
+            .bdHeaderLogo {
+                display: none;
+            }
+        }
+   }
+}
+
+@include desktop {
+   :host {
+        .nav-logo {
+            margin: 15px auto;
+            .nav-logo-subhead {
+                text-transform: uppercase;
+                color: $medium-black;
+                font-size: 16px;
+                letter-spacing: 4px;
+                margin: 5px 0;
+                font-weight: bold;
+            }
+            .bdHeaderLogo {
+                margin-left: 50px;
+            }
+        }
+   }
+   nav {
+       &.navbar-light {
+             padding: 20px 0;
+             background-color: $semi-light-grey !important;
+       }
+       .navbar-collapse {
+           ul {
+               &.navbar-center {
+                    position: absolute;
+                    left: 40%;
+                    transform: translatex(-40%);
+               }
+           }
+       }
+       .navbar-brand {
+           display: none;
+       }
+   }
+}
+

@@ -1,0 +1,23 @@
+@import "../../styles/colors";
+
+footer {
+    color: $white;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+
+    section {
+        p {
+            color: $white;
+        }
+        &.footer-widget-area {
+            padding: 42px 0 0 0;
+            background: $medium-black;
+
+            &.footer-widget-area-copyright {
+                padding: 20px 0 0 0;
+                background: $light-red;
+            }
+        }
+    }
+}
